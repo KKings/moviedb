@@ -3,6 +3,7 @@
   , "authentication" : {
         "requestToken" : "authentication/token/new"
       , "sessionId" : "authentication/session/new"
+      , "validateLogin" : "authentication/token/validate_with_login"
     }
   , "methods" : {
         "configuration" : {
@@ -83,6 +84,8 @@
         }
       , "list" : {
             "Info" : { "resource": "list/:id", "method": "get" }
+          , "Add" : { "resource": "list/:id/add_item", "method": "post" }
+          , "Clear" : { "resource": "list/:id/clear", "method": "post" }
         }
       , "genre" : {
             "MovieList" : { "resource": "genre/movie/list", "method": "get" }
